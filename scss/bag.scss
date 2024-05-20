@@ -1,0 +1,241 @@
+@import 'normalize.css';
+@import 'reset.scss';
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	line-height: 1.35;
+	color: rgba(26, 31, 22, 1);
+	background-color: rgba(237, 237, 237, 1);
+}
+
+.bag-page {
+	margin-left: 122px;
+}
+
+.container {
+	max-width: 1900px;
+	padding: 0 10px;
+}
+
+.bag-page__wrap {
+	display: flex;
+}
+
+.bag {
+	flex: 1 1 auto;
+	max-height: 920px;
+	padding: 0 50px;
+	margin: 50px 0;
+	border-right: 4px solid rgba(26, 31, 22, 0.5);
+}
+
+.bag__link-back {
+	display: flex;
+	align-items: center;
+	margin-bottom: 25px;
+	color: rgba(26, 31, 22, 1);
+}
+
+.bag__link-back::before {
+	content: '';
+	width: 24px;
+	height: 24px;
+	margin-right: 8px;
+	background-image: url('../../images/icons/icon-back.svg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.bag__title {
+	font-size: 49px;
+	margin-bottom: 35px;
+}
+
+.list-bag {
+	display: flex;
+	flex-direction: column;
+	max-height: 100vh;
+	row-gap: 25px;
+	overflow: auto;
+}
+
+.list-bag__item {
+	max-width: 877px;
+	padding: 16px 24px;
+	border-radius: 21px;
+	background-color: rgba(255, 255, 255, 1);
+}
+.list-bag__item-wrap {
+	display: flex;
+	column-gap: 16px;
+}
+.list-bag__img-wrap {
+	max-width: 205px;
+	max-height: 255px;
+	flex: 0 0 100%;
+}
+.list-bag__img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+.list-bag__item-body {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 8px;
+	border-radius: 20px;
+	background-color: rgb(218, 225, 231);
+}
+.list-bag__title {
+	font-size: 31px;
+	margin-bottom: 10px;
+}
+.list-bag__color {
+	color: rgba(96, 105, 92, 1);
+	margin-bottom: 10px;
+}
+.list-bag__description {
+	max-height: 150px;
+	overflow: auto;
+	letter-spacing: -2%;
+	margin-bottom: 10px;
+}
+.list-bag__rating-wrap {
+	margin-bottom: 20px;
+	display: flex;
+	column-gap: 20px;
+}
+.list-bag__rating-list {
+	display: flex;
+	column-gap: 10px;
+}
+.list-bag__rating-star {
+	width: 24px;
+	height: 24px;
+}
+.list-bag__rating-star-icon {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+.list-bag__rating-number-wrap {
+	color: rgba(18, 128, 93, 1);
+}
+
+.list-bag__price-wrap {
+	display: flex;
+	justify-content: space-between;
+	padding: 8px;
+}
+
+.list-bag__counter {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 127px;
+	border-radius: 20px;
+	background-color: rgba(237, 237, 237, 1);
+}
+.list-bag__minus::after,
+.list-bag__plus::after {
+	content: '';
+	display: block;
+	width: 24px;
+	height: 24px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	cursor: pointer;
+}
+
+.list-bag__minus::after {
+	background-image: url('../../images/icons/minus.svg');
+}
+
+.list-bag__number {
+	font-weight: 700;
+}
+
+.list-bag__plus::after {
+	content: '';
+	background-image: url('../../images/icons/plus.svg');
+}
+
+.bag-preview {
+	height: 100vh;
+	max-width: 345px;
+	margin: 50px auto;
+	padding: 0 8px;
+}
+
+.bag-preview__title {
+	font-size: 39px;
+	margin-bottom: 20px;
+}
+
+.bag-preview__bag-body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0 20px;
+}
+
+.bag-preview__list {
+	display: flex;
+	max-height: 200px;
+	flex-wrap: wrap;
+	gap: 16px;
+	margin-bottom: 18px;
+	overflow: auto;
+}
+
+.bag-preview__img {
+	width: 80px;
+	height: 80px;
+}
+
+.bag-preview__img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.bag-preview__total {
+	margin-bottom: 35px;
+}
+
+.bag-preview__total-price::before {
+	content: '$';
+	margin-left: 16px;
+}
+
+.bag-preview__button {
+	display: flex;
+	max-width: 210px;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 8px 24px;
+	border-radius: 14px;
+	color: #fff;
+	background-color: #000;
+}
+
+.bag-preview__icon {
+	width: 24px;
+	height: 24px;
+	margin-right: 8px;
+}
+
+.bag-preview__icon img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	object-position: center;
+}

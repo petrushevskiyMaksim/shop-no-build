@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500&family=Open+Sans:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./src/scss/style.scss" />
+		<title>Shop</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div id="shop" class="shop">
+				<div class="container">
+					<div class="shop__wrapper">
+						<div class="shop__list-wrapper">
+							<ul id="shopListItems" class="shop__list-items"></ul>
+						</div>
+						<div class="shop__bag-wrapper">
+							<div class="shop__bag">
+								<h2 class="bag__title">Корзина</h2>
+								<div class="shop__bag-body">
+									<ul id="bagList" class="bag__list"></ul>
+									<button id="bagBtn" class="bag__button">
+										<a href="./pages/bag.html" class="bag__button-link">
+											<img
+												src="./images/icons/bag-icon.svg"
+												alt="картинка сумочки"
+												class="bag__icon"
+											/>
+											<span class="bag__button-title">Корзина</span>
+										</a>
+									</button>
+								</div>
+								<div class="shop__orders">
+									<h2 class="orders__title">Заказы</h2>
+									<ul class="orders__list">
+										<li class="orders__item">
+											<a href="#" class="orders__link">#111111</a>
+										</li>
+										<li class="orders__item">
+											<a href="#" class="orders__link">#111111</a>
+										</li>
+										<li class="orders__item">
+											<a href="#" class="orders__link">#111111</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="module" src="./src/js/script.js"></script>
+	</body>
+</html>
